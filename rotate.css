@@ -1,0 +1,36 @@
+body{
+    background-color: #000000;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(10, 1, 2);
+    border-radius: 5px;
+    box-shadow:
+    0 0 60px 30px rgb(228, 154, 57),
+    0 0 100px 60px rgb(202, 40, 67),
+    0 0 140px 90px rgb(12, 75, 75);
+   
+}
+.rotate-90-cw {
+	        animation: rotate-90-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation-iteration-count: infinite;
+            animation-duration: 1s;
+}
+
+ @keyframes rotate-90-cw {
+    0% {
+              transform: rotate(0);
+    }
+    100% {
+              transform: rotate(90deg);
+    }
+  }
+  
+  
